@@ -38,14 +38,25 @@ void Student::display()
 
 int main() 
 {
-    Student st("Tanmay", 19); 
-    st.display();
-
+    Student st1("Tanmay", 19); 
+    st1.display();
+    
+    cout<<"\nOriginal Object\n";
+    
+    Student st2 = st1;
+    cout<<"New object\n";
+    st2.display();
     return 0;
 }
 
 /* output for this code
 
+Name : Tanmay
+Age : 19
+
+Original Object
+Copy constructor called!
+New object
 Name : Tanmay
 Age : 19
 
