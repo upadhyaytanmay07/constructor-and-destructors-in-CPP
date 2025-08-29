@@ -7,7 +7,7 @@ Visual studio code
 Windows/Linux
 
 # Theory
-# 1. Contructor function
+# 1. Constructor function
 A constructor is a special member function of a class that is automatically invoked when an object of that class is created. Its primary role is to initialize the object’s data members.
 
 # Key Characteristics
