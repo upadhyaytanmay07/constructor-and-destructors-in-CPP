@@ -29,47 +29,47 @@ Automatically provided by the compiler if no other constructor is defined.
 
 Used to initialize objects with default values.
 
-cpp
-    class Box {
-    public:
-        Box() {
-            cout << "Default constructor called!" << endl;
-        }
-    };
+        cpp
+            class Box {
+            public:
+                Box() {
+                    cout << "Default constructor called!" << endl;
+                }
+            };
 
 # 2. Parameterized Constructor
 Accepts arguments to initialize data members with specific values.
 
 Enables flexible object creation.
 
-cpp
-    class Box {
-    public:
-        int length;
-        Box(int l) {
-            length = l;
-        }
-    };
+        cpp
+            class Box {
+            public:
+                int length;
+                Box(int l) {
+                    length = l;
+                }
+            };
 
 # 3. Copy Constructor
 Initializes a new object using an existing object of the same class.
 
 Syntax: ClassName(const ClassName &obj)
 
-cpp
-    Box(Box &b) {
-        length = b.length;
-    }
+        cpp
+            Box(Box &b) {
+                length = b.length;
+            }
 
 # Constructor Overloading
 You can define multiple constructors in a class with different parameter lists. This is called constructor overloading.
 
-cpp
-    class Box {
-    public:
-        Box() { length = 0; }
-        Box(int l) { length = l; }
-    };   
+        cpp
+            class Box {
+            public:
+                Box() { length = 0; }
+                Box(int l) { length = l; }
+            };   
 
 # 2. Destructor function
 A destructor is a special member function of a class that is automatically invoked when an object goes out of scope or is explicitly deleted. Its primary role is to release resources that the object may have acquired during its lifetime—like memory, file handles, or network connections.
@@ -90,13 +90,13 @@ Cannot be overloaded: Only one destructor per class.
 Cannot be inherited: But base class destructors are called automatically.
 
 #  Syntax of a Destructor
-cpp
-    class MyClass {
-    public:
-        MyClass() {
-            // Cleanup code
-        }
-    };
+        cpp
+            class MyClass {
+            public:
+                MyClass() {
+                    // Cleanup code
+                }
+            };
 # When Is a Destructor Called?
 Destructors are triggered in the following scenarios:
 
@@ -116,7 +116,7 @@ Resource deallocation: Closing files, releasing locks, etc.
 Avoiding memory leaks: Ensuring resources are not left hanging.
 
 # Example: Destructor in Action
-cpp
+    cpp
      #include <iostream>
     using namespace std;
     
@@ -138,5 +138,6 @@ cpp
 Output:
 
 Code
+
     Constructor called
     Destructor called
