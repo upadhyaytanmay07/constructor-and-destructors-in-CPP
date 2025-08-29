@@ -93,7 +93,7 @@ Cannot be inherited: But base class destructors are called automatically.
         cpp
             class MyClass {
             public:
-                MyClass() {
+                ~MyClass() {
                     // Cleanup code
                 }
             };
