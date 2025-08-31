@@ -17,10 +17,8 @@ class Book
 public:
     Book(); // Default constructor
 
-    void display() 
-    {
-        cout << "Title: " << title << ", Author: " << author << ", Price: " << price << endl;
-    }
+    void display(); 
+    
 };
 
 // Constructor definition
@@ -39,11 +37,17 @@ Book::Book()
     cout << endl;
 }
 
+void Book::display()
+{
+        cout << "Title: " << title << ", Author: " << author << ", Price: " << price << endl;
+}
+
 int main() 
 {
     Book b1;
     b1.display();
 }
+
 
 /* output for this code 
 
